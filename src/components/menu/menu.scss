@@ -1,0 +1,64 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    span{
+
+    }
+    .menuItem{
+        display: flex;
+        gap: 15px; 
+        align-items: flex-end;
+        img{
+            height: 20px;
+        }
+    }
+    .subMenu{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-left: 1rem;    
+        margin-top: -30px;
+        margin-bottom: 0;
+        box-shadow: -2px 10px 16px -20px rgba(0, 0, 0, 0.2), -24px 8px 20px 0 rgba(0, 0, 0, 0.19);
+        height: 0;
+        overflow: hidden;
+    }
+    .subMenuActive{
+        margin-top: -30px;
+        animation: resizeH 2s forwards;
+    }
+    .subMenuPass{
+        margin-top: 0px;
+        animation: resizeHR 2s forwards;
+    }
+}
+@keyframes resizeH {
+    0% {
+        height: 0;
+        margin-top: -30px;
+    }
+    30% {
+        margin-top: 0px;
+        height: 50%;
+    }
+    100%{
+        margin-top: 0px;
+        height: 100%;
+    }
+}
+@keyframes resizeHR {
+    0% {
+        margin-top: 0px;
+        height: 100%;
+    }
+    70% {
+        height: 50%;
+        margin-top: 0px;
+    }
+    100%{
+        margin-top: -30px;
+        height: 0;
+    }
+}

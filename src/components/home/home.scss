@@ -1,0 +1,196 @@
+.home {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+
+  .itemsAndBestSeller{
+    display: flex;
+    width: 100%;
+    gap: 40px;
+    margin: 2rem 0;
+    .items{
+      width: 700px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .exploreSection{
+      display: flex;
+      gap: 50px;
+    }
+  }
+
+  .homeFirstRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .saleBox {
+    width: 700px;
+    height: 330px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 22px 40px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+    align-items: center;
+
+    .sellBoxImage {
+      background-image: url("../../images/clown.png");
+      width: 300px;
+      height: 300px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .sellBoxText {
+      display: flex;
+      flex-direction: column;
+      height: 80%;
+      justify-content: space-evenly;
+    }
+    .buttonBox {
+      display: flex;
+      justify-content: space-around;
+
+      button {
+        align-items: center;
+        appearance: none;
+        background-color: #fcfcfd;
+        border-radius: 4px;
+        border-width: 0;
+        box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+          rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+        box-sizing: border-box;
+        color: #36395a;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: "JetBrains Mono", monospace;
+        height: 30px;
+        justify-content: center;
+        line-height: 1;
+        list-style: none;
+        overflow: hidden;
+        padding-left: 16px;
+        padding-right: 16px;
+        position: relative;
+        text-align: left;
+        text-decoration: none;
+        transition: box-shadow 0.15s, transform 0.15s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        will-change: box-shadow, transform;
+        font-size: 18px;
+        box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+          rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+        box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+          rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+        transform: translateY(-2px);
+        box-shadow: #d6d6e7 0 3px 7px inset;
+        transform: translateY(2px);
+        transition: all 0.3s linear;
+        &:hover {
+          background-color: rgb(227, 212, 182);
+        }
+      }
+    }
+
+    .sellBoxImage {
+      background-image: url("../../images/clown.png");
+      width: 300px;
+      height: 300px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .sellBoxText {
+      display: flex;
+      flex-direction: column;
+      height: 80%;
+      justify-content: space-evenly;
+    }
+    .buttonBox {
+      display: flex;
+      justify-content: space-around;
+
+      button {
+        align-items: center;
+        appearance: none;
+        background-color: #fcfcfd;
+        border-radius: 4px;
+        border-width: 0;
+        box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+          rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+        box-sizing: border-box;
+        color: #36395a;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: "JetBrains Mono", monospace;
+        height: 30px;
+        justify-content: center;
+        line-height: 1;
+        list-style: none;
+        overflow: hidden;
+        padding-left: 16px;
+        padding-right: 16px;
+        position: relative;
+        text-align: left;
+        text-decoration: none;
+        transition: box-shadow 0.15s, transform 0.15s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        will-change: box-shadow, transform;
+        font-size: 18px;
+        box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+          rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+        box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+          rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+        transform: translateY(-2px);
+        box-shadow: #d6d6e7 0 3px 7px inset;
+        transform: translateY(2px);
+        transition: all 0.3s linear;
+        &:hover {
+          background-color: rgb(227, 212, 182);
+        }
+      }
+    }
+  }
+
+  .advertise {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    background: linear-gradient(107deg, #42990d 13.38%, #076969 87.5%);
+  }
+
+  .advertise {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    background: linear-gradient(107deg, #42990d 13.38%, #076969 87.5%);
+    position: relative;
+    color: white;
+    font-family: "Podkova", serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+
+    img {
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+    }
+  }
+}
