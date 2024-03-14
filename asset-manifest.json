@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/suggazon/static/css/main.e45b662b.css",
+    "main.js": "/suggazon/static/js/main.ea26a6f0.js",
+    "static/js/787.214f8415.chunk.js": "/suggazon/static/js/787.214f8415.chunk.js",
+    "static/media/logo.svg": "/suggazon/static/media/logo.fe0fa91863e80db2fa3a32cdea336b6c.svg",
+    "static/media/greyHeadphones.webp": "/suggazon/static/media/greyHeadphones.f946a61145070d88d607.webp",
+    "static/media/exploreIcon.png": "/suggazon/static/media/exploreIcon.dc4e15e977fee4028150.png",
+    "static/media/blueHeadphones.jpg": "/suggazon/static/media/blueHeadphones.cb61d129f73be0857f77.jpg",
+    "static/media/whiteHeadphones.jpg": "/suggazon/static/media/whiteHeadphones.16835e3b9b03e0332153.jpg",
+    "static/media/cartIcon.png": "/suggazon/static/media/cartIcon.72cc138aaa781b61ec87.png",
+    "static/media/homeIcon.png": "/suggazon/static/media/homeIcon.b0279e4618f3a17feff2.png",
+    "static/media/headphone.png": "/suggazon/static/media/headphone.82d110c15256ab5fbdea.png",
+    "static/media/earbud.png": "/suggazon/static/media/earbud.fe91b8b94807b301c580.png",
+    "index.html": "/suggazon/index.html",
+    "main.e45b662b.css.map": "/suggazon/static/css/main.e45b662b.css.map",
+    "main.ea26a6f0.js.map": "/suggazon/static/js/main.ea26a6f0.js.map",
+    "787.214f8415.chunk.js.map": "/suggazon/static/js/787.214f8415.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e45b662b.css",
+    "static/js/main.ea26a6f0.js"
+  ]
+}
