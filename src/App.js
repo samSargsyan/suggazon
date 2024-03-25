@@ -16,6 +16,7 @@ function App() {
           <Header />
           <Routes>
             <Route exact path="/" element={<Home />} />
+            <Route exact path="/suggazon" element={<Home />} />
             <Route path="/inside/:id" element={<ItemInside />} />
           </Routes>
         </div>

@@ -32,7 +32,7 @@ const Home = () => {
           {data.map((item, index) => {
             return (
               <Link to={`/inside/${item.id}`}>
-                <Item item={item} key={index * Math.random()} />
+                <Item item={item} key={index * item.id} />
               </Link>
             );
           })}
@@ -48,3 +48,5 @@ const Home = () => {
 };
 
 export default Home;
+
+//add button which would resize during mobile
