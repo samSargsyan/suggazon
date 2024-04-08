@@ -9,4 +9,30 @@
   .App {
     width: 200%;
   }
+  .mobileOpenMenu{
+    animation-name: mobileOpenMenu;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+  }
+  .mobileCloseMenu{
+      animation-name: mobileCloseMenu;
+      animation-fill-mode: forwards;
+      animation-duration: 1s;
+  }
+  @keyframes mobileCloseMenu {
+    from {
+      width: calc(100% - 200px);
+    }
+    to {
+      width: 98%;
+    }  
+  }
+  @keyframes mobileOpenMenu {
+    from {
+      width: 98%;
+    }
+    to {
+      width: calc(100% - 200px);
+    }
+  }
 }
