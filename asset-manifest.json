@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/suggazon/static/css/main.bc85205f.css",
+    "main.css": "/suggazon/static/css/main.51cde1b6.css",
     "main.js": "/suggazon/static/js/main.eb9ef899.js",
     "static/js/787.214f8415.chunk.js": "/suggazon/static/js/787.214f8415.chunk.js",
     "static/media/logo.svg": "/suggazon/static/media/logo.fe0fa91863e80db2fa3a32cdea336b6c.svg",
@@ -14,12 +14,12 @@
     "static/media/headphone.png": "/suggazon/static/media/headphone.82d110c15256ab5fbdea.png",
     "static/media/earbud.png": "/suggazon/static/media/earbud.fe91b8b94807b301c580.png",
     "index.html": "/suggazon/index.html",
-    "main.bc85205f.css.map": "/suggazon/static/css/main.bc85205f.css.map",
+    "main.51cde1b6.css.map": "/suggazon/static/css/main.51cde1b6.css.map",
     "main.eb9ef899.js.map": "/suggazon/static/js/main.eb9ef899.js.map",
     "787.214f8415.chunk.js.map": "/suggazon/static/js/787.214f8415.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc85205f.css",
+    "static/css/main.51cde1b6.css",
     "static/js/main.eb9ef899.js"
   ]
 }
