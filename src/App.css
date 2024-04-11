@@ -6,9 +6,6 @@
 }
 
 @media screen and (max-width: 780px) {
-  .App {
-    width: 200%;
-  }
   .mobileOpenMenu{
     animation-name: mobileOpenMenu;
     animation-fill-mode: forwards;
@@ -33,6 +30,32 @@
     }
     to {
       width: calc(100% - 200px);
+    }
+  }
+  .AppOpen{
+    animation-name: mobileOpenApp;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+  }
+  .AppClose{
+      animation-name: mobileCloseApp;
+      animation-fill-mode: forwards;
+      animation-duration: 1s;
+  }
+  @keyframes mobileCloseApp {
+    from {
+      width: 200%;
+    }
+    to {
+      width: 100%;
+    }  
+  }
+  @keyframes mobileOpenApp {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 200%;
     }
   }
 }

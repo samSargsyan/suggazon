@@ -8,9 +8,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ItemInside from "./components/itemInside/ItemInside";
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   return (
-    <div className="App">
+    <div className={`App ${isOpen ? 'AppOpen' : 'AppClose'}`}>
       <BrowserRouter>
         <LeftBar isOpen={isOpen} setIsOpen={setIsOpen} />
         <div className={`layout ${isOpen ? 'mobileOpenMenu' : 'mobileCloseMenu'}`}>
