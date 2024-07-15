@@ -4,6 +4,9 @@
 .layout{
   width: calc(100% - 200px);
 }
+a{
+  text-decoration: none;
+}
 
 @media screen and (max-width: 780px) {
   .mobileOpenMenu{

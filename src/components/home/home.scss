@@ -5,20 +5,20 @@
   flex-wrap: wrap;
   padding: 0 2rem;
 
-  .itemsAndBestSeller{
+  .itemsAndBestSeller {
     display: flex;
     width: 100%;
     gap: 40px;
     margin: 2rem 0;
-    .items{
-      width: 700px;
+    justify-content: space-between;
+    .items {
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      gap: 15px;
       flex-wrap: wrap;
-      gap: 20px;
+      align-content: flex-start;
     }
-    .exploreSection{
+    .exploreSection {
       display: flex;
       gap: 50px;
     }
@@ -35,20 +35,19 @@
   .saleBox {
     width: 700px;
     height: 330px;
-    border-radius: 10px;
     background: #fff;
-    box-shadow: 0px 22px 40px 0px rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: flex-start;
     gap: 3rem;
     align-items: center;
 
     .sellBoxImage {
-      background-image: url("../../images/clown.png");
       width: 300px;
       height: 300px;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
     }
     .sellBoxText {
       display: flex;
@@ -139,6 +138,78 @@
       right: 5px;
     }
   }
+
+  .homeFirstSwiper{
+    box-shadow: 5px 10px 8px #bfbdbd;
+    .swiper{
+      width: 100%;
+    }
+  }
+
+  .swiper {
+    width: 240px;
+    height: 320px;
+  }
+
+  .swiper-cards {
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 18px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+    }
+    a {
+      color: #000000;
+      text-decoration: underline;
+    }
+  }
+
+  .homeSecondSwiper{
+    .swiper-slide:nth-child(1n) {
+      background-color: rgb(233, 177, 87);
+    }
+  
+    .swiper-slide:nth-child(2n) {
+      background-color: rgb(222, 146, 59);
+    }
+  
+    .swiper-slide:nth-child(3n) {
+      background-color: rgb(217, 191, 148);
+    }
+  
+    .swiper-slide:nth-child(4n) {
+      background-color: rgb(150, 85, 10);
+    }
+  
+    .swiper-slide:nth-child(5n) {
+      background-color: rgb(255, 224, 174);
+    }
+  
+    .swiper-slide:nth-child(6n) {
+      background-color: rgb(222, 146, 59);
+    }
+  
+    .swiper-slide:nth-child(7n) {
+      background-color: rgb(35, 99, 19);
+    }
+  
+    .swiper-slide:nth-child(8n) {
+      background-color: rgb(0, 68, 255);
+    }
+  
+    .swiper-slide:nth-child(9n) {
+      background-color: rgb(218, 12, 218);
+    }
+  
+    .swiper-slide:nth-child(10n) {
+      background-color: rgb(54, 94, 77);
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -146,11 +217,11 @@
     width: 85px !important;
     height: 80px !important;
   }
-  .home{
+  .home {
     .saleBox {
       height: 200px;
       gap: 2rem;
-      .sellBoxText{
+      .sellBoxText {
         padding-right: 1rem;
       }
       .buttonBox {
@@ -162,21 +233,33 @@
         }
       }
     }
-    .advertise{
+    .advertise {
       height: 160px;
     }
-    .homeFirstRow{
+    .homeFirstRow {
       justify-content: center;
-    }
-    .itemsAndBestSeller{
       flex-direction: column;
-      .items{
+    }
+    .homeFirstSwiper{
+      width: 100% !important;
+      .swiper{
+        height: 250px !important;
+      }
+    }
+    .itemsAndBestSeller {
+      flex-direction: column;
+      .items {
         width: 100%;
         justify-content: center;
       }
-      .bestSeller{
+      .bestSeller {
         width: 100%;
       }
     }
   }
+
+}
+
+.swiper-pagination-bullet-active{
+  background-color: #ffba5b !important; 
 }

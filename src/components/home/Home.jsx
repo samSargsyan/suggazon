@@ -1,41 +1,131 @@
 import "./home.scss";
 import headphone from "../../images/headphone.png";
-import earbud from "../../images/earbud.png";
 import Item from "../item/Item";
 import BestSeller from "../bestSeller/BestSeller";
-import { Link } from "react-router-dom";
 import data from "../data";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-cards";
+import { EffectCards } from "swiper/modules";
+import advertise from "../advertise";
+import { Autoplay, Mousewheel, Pagination } from "swiper/modules";
+import slider from "../slider.js";
+import "swiper/css/pagination";
 
-const Home = () => {
+const Home = ({ searchValue }) => {
+  const categories = [
+    "Homegoods",
+    "Clothing",
+    "Gadgets",
+    "Wellness",
+    "Acccessories",
+    "Kids",
+  ];
+
+  const filterAndGroupItems = (items, numberOfCategories, itemsPerCategory) => {
+    // Filter items based on searchValue
+    const filteredItems = items.filter(item =>
+      item.name.toLowerCase().includes(searchValue.toLowerCase())
+    );
+
+    // Initialize categorized items array
+    const categorizedItems = [];
+
+    // Group filtered items into categories
+    for (let i = 0; i < numberOfCategories; i++) {
+      const startIndex = i * itemsPerCategory;
+      const endIndex = startIndex + itemsPerCategory;
+      const categoryItems = filteredItems.slice(startIndex, endIndex);
+      categorizedItems.push(categoryItems);
+    }
+
+    return categorizedItems;
+  };
+
+  // Group and filter items
+  const categorizedItems = filterAndGroupItems(data, 5, 4); // 5 categories with 4 items per category
+
+
   return (
     <div className="home">
       <div className="homeFirstRow">
-        <div className="saleBox">
-          <div className="sellBoxImage"></div>
-          <div className="sellBoxText">
-            <strong>Clown Wig</strong>
-            <span>A clown wig you can wear to any silly event!</span>
-            <div className="buttonBox">
-              <button>Buy Now!</button>
-              <button>Add to Cart</button>
-            </div>
-          </div>
+        <div className="homeFirstSwiper">
+          <Swiper
+            direction={"vertical"}
+            slidesPerView={1}
+            spaceBetween={30}
+            mousewheel={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            navigation={true}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Autoplay, Mousewheel, Pagination]}
+            className="swiperSale"
+          >
+            {slider.map((item) => {
+              return (
+                <SwiperSlide>
+                  <div className="saleBox">
+                    <div
+                      className="sellBoxImage"
+                      style={{ backgroundImage: `url('${item.image}')` }}
+                    ></div>
+                    <div className="sellBoxText">
+                      <strong>{item.name}</strong>
+                      <span>A clown wig you can wear to any silly event!</span>
+                      <div className="buttonBox">
+                        <a href={item.link} target="_blank" rel="noreferrer">
+                          <button>Buy Now!</button>
+                        </a>
+                        <button>Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
         </div>
-        <div className="advertise">
+        <div className="homeSecondSwiper">
+          <Swiper
+            effect={"cards"}
+            grabCursor={true}
+            modules={[EffectCards]}
+            className="mySwiper"
+          >
+            {advertise.map((item) => {
+              return (
+                <SwiperSlide>
+                  <img src={item.image} alt="headphone" width="100" />
+                  <span>{item.name}</span>
+                  <a href={item.link} target="_blank" rel="noreferrer">
+                    <span>Buy it now!</span>
+                  </a>
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
+        </div>
+        {/* <div className="advertise">
           <span>Summer headphones for top deals!</span>
           <span>Buy it now!</span>
           <img src={headphone} alt="headphone" width="100" />
-        </div>
+        </div> */}
       </div>
       <div className="itemsAndBestSeller">
         <div className="items">
-          {data.map((item, index) => {
-            return (
-              <Link to={`/inside/${item.id}`}>
-                <Item item={item} key={index * item.id} />
-              </Link>
-            );
-          })}
+        {categorizedItems.map((category, categoryIndex) => (
+            <div className="exploreSection" key={categoryIndex}>
+              <span>{categories[categoryIndex]}</span>
+              {category.map((item, index) => (
+                <Item item={item} key={index} />
+              ))}
+            </div>
+          ))}
           <div className="exploreSection">
             <span>Explore Popular Categories</span>
             <span>See All</span>

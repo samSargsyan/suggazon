@@ -1,22 +1,20 @@
 import './bestSeller.scss';
-import headphones from '../../images/headphone.png';
-import { Link } from 'react-router-dom';
+import data from "../data";
 
 const BestSeller = () => {
   return (
     <div className='bestSeller'>
       <h2>Best Sales</h2>
-      {Array.from({ length: 9 }, (_, index) => (
-        <Link to={`/inside/1`}>
+      {data.map((item, index) => (
+        <a href={item.link}>                   
           <div className="bestItem" key={index}>
-            <img src={headphones} alt={headphones} />
+            <img src={item.image} alt={item.name} />
             <div className='bestSales'>
-              <span className='bestItemTitle'>Black Headphones</span>
-              <span className='bestItemDescription'>A comfy headphone, and stylish...</span>  
+              <span className='bestItemTitle'>{item.name}</span> 
             </div> 
-            <span>Price $39.99</span> 
+            <span>Price ${item.price}</span> 
           </div>
-        </Link>
+        </a> 
       ))}
     </div>
   )
