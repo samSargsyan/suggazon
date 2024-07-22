@@ -17,8 +17,8 @@ const Header = ({ searchValue, setSearchValue }) => {
   return (
     <div className="header">
       <div className="headerTitle">
-        <h1>jhgjkhj</h1>
-        <h4>ihskbciu</h4>
+        <h1>Welcome to Suggazon!</h1>
+        <h4>Find The Most Popular and High Rated Goods Here!</h4>
       </div>
       <div className="headerSearch">
         <div className="searchBox">
