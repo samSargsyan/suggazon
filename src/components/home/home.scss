@@ -21,13 +21,14 @@
     .exploreSection {
       display: flex;
       gap: 50px;
+      width: 100%;
     }
   }
 
   .homeFirstRow {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 1rem;
     flex-wrap: wrap;
   }

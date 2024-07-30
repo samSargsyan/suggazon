@@ -487,6 +487,86 @@ const data = [
     link: "https://amzn.to/3Lytd2f",
     price: "26.99"
   },
+  {
+    id: 60,
+    image: "https://m.media-amazon.com/images/I/61eTm7SjkTL._AC_SX679_.jpg",
+    name: "VELIMAX Premium Stainless Steel",
+    category: ["homegoods"],
+    link: "https://amzn.to/4dm3dTH",
+    price: "56.99"
+  },
+  {
+    id: 61,
+    image: "https://m.media-amazon.com/images/I/71mD6NQrLfL._AC_SX679_.jpg",
+    name: "Smart Toilet with Built-in Heated Seat",
+    category: ["homegoods"],
+    link: "https://amzn.to/4cYFNE0",
+    price: "299.98"
+  },
+  {
+    id: 62,
+    image: "https://m.media-amazon.com/images/I/81gEF9esxYL._AC_SX679_.jpg",
+    name: "Spiral Water Fountain Indoor",
+    category: ["homegoods"],
+    link: "https://amzn.to/3WJwQso",
+    price: "199.97"
+  },
+  {
+    id: 63,
+    image: "https://m.media-amazon.com/images/I/81CZ6uWnC+L._AC_SX679_.jpg",
+    name: "Water Fountain Outdoor",
+    category: ["homegoods"],
+    link: "https://amzn.to/4fng61E",
+    price: "169.98"
+  },
+  {
+    id: 64,
+    image: "https://m.media-amazon.com/images/I/61NI0YEWPQL._AC_SX679_.jpg",
+    name: "All-Purpose Shower Squeegee",
+    category: ["homegoods"],
+    link: "https://amzn.to/4dqEhKR",
+    price: "17.98"
+  },
+  {
+    id: 65,
+    image: "https://m.media-amazon.com/images/I/71Rzj5zBl9L._AC_SX679_.jpg",
+    name: "Frameless Sliding Shower Door",
+    category: ["homegoods"],
+    link: "https://amzn.to/3WqcrHB",
+    price: "619.99"
+  },
+  {
+    id: 66,
+    image: "https://m.media-amazon.com/images/I/91AtBf2JQ+L._AC_SX679_.jpg",
+    name: "Acoustic Wood Wall Panels",
+    category: ["homegoods"],
+    link: "https://amzn.to/3LIZp2X",
+    price: "139.99"
+  },
+  {
+    id: 66,
+    image: "https://m.media-amazon.com/images/I/71cmBruMCXL._AC_SX679_.jpg",
+    name: "Brushed Gold Bathroom Faucet",
+    category: ["homegoods"],
+    link: "https://amzn.to/4folaCK",
+    price: "89.99"
+  },
+  {
+    id: 67,
+    image: "https://m.media-amazon.com/images/I/71-bmVss4FL._AC_SX679_.jpg",
+    name: "Elegant Bathroom Sink Faucet",
+    category: ["homegoods"],
+    link: "https://amzn.to/3WnRUU1",
+    price: "125.99"
+  },
+  {
+    id: 68,
+    image: "https://m.media-amazon.com/images/I/61JSAGohG+L._AC_SX679_.jpg",
+    name: "Wovier Brushed Gold Bathroom Sink Faucet",
+    category: ["homegoods"],
+    link: "https://amzn.to/46obwMz",
+    price: "74.97"
+  },
 ];
 
 export default data;

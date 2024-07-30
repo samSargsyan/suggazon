@@ -6,8 +6,8 @@ const BestSeller = () => {
     <div className='bestSeller'>
       <h2>Best Sales</h2>
       {data.map((item, index) => (
-        <a href={item.link}>                   
-          <div className="bestItem" key={index}>
+        <a href={item.link} key={index}>                   
+          <div className="bestItem" >
             <img src={item.image} alt={item.name} />
             <div className='bestSales'>
               <span className='bestItemTitle'>{item.name}</span> 

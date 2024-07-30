@@ -11,6 +11,7 @@ import advertise from "../advertise";
 import { Autoplay, Mousewheel, Pagination } from "swiper/modules";
 import slider from "../slider.js";
 import "swiper/css/pagination";
+import { Link } from "react-router-dom";
 
 const Home = ({ searchValue }) => {
   const categories = [
@@ -24,7 +25,7 @@ const Home = ({ searchValue }) => {
 
   const filterAndGroupItems = (items, numberOfCategories, itemsPerCategory) => {
     // Filter items based on searchValue
-    const filteredItems = items.filter(item =>
+    const filteredItems = items.filter((item) =>
       item.name.toLowerCase().includes(searchValue.toLowerCase())
     );
 
@@ -44,7 +45,6 @@ const Home = ({ searchValue }) => {
 
   // Group and filter items
   const categorizedItems = filterAndGroupItems(data, 5, 4); // 5 categories with 4 items per category
-
 
   return (
     <div className="home">
@@ -118,7 +118,7 @@ const Home = ({ searchValue }) => {
       </div>
       <div className="itemsAndBestSeller">
         <div className="items">
-        {categorizedItems.map((category, categoryIndex) => (
+          {categorizedItems.map((category, categoryIndex) => (
             <div className="exploreSection" key={categoryIndex}>
               <span>{categories[categoryIndex]}</span>
               {category.map((item, index) => (
@@ -127,8 +127,9 @@ const Home = ({ searchValue }) => {
             </div>
           ))}
           <div className="exploreSection">
-            <span>Explore Popular Categories</span>
-            <span>See All</span>
+            <Link to="/explore">
+              <span>See All</span>
+            </Link>
           </div>
         </div>
         <BestSeller />
