@@ -63,6 +63,7 @@ const Home = ({ searchValue }) => {
             pagination={{
               clickable: true,
             }}
+            loop={true}
             modules={[Autoplay, Mousewheel, Pagination]}
             className="swiperSale"
           >
