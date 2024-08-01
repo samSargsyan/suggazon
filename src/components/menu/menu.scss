@@ -10,6 +10,7 @@
         display: flex;
         gap: 15px; 
         align-items: flex-end;
+        cursor: pointer;
         img{
             height: 20px;
         }
@@ -31,7 +32,7 @@
     }
     .subMenuPass{
         margin-top: 0px;
-        animation: resizeHR 2s forwards;
+        animation: resizeHR 1s forwards;
     }
 }
 @keyframes resizeH {
@@ -53,7 +54,7 @@
         margin-top: 0px;
         height: 100%;
     }
-    70% {
+    10% {
         height: 50%;
         margin-top: 0px;
     }

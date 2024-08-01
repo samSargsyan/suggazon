@@ -3,6 +3,7 @@ import explore from "../../images/exploreIcon.png";
 import home from "../../images/homeIcon.png";
 import cart from "../../images/cart.png";
 import category from "../../images/categoryIcon.png";
+import category2 from "../../images/categoryIcon2.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -27,7 +28,7 @@ const Menu = () => {
         </Link>
       </div>
       <div className="menuItem" onClick={toggleSub}>
-        <img src={category} alt="category" />
+        <img src={active === "subMenuActive" ? category2 : category} alt="category" />
         <span>Categories</span>
       </div>
       <div className={`subMenu ${active}`}>
