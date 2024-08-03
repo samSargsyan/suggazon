@@ -567,6 +567,14 @@ const data = [
     link: "https://amzn.to/46obwMz",
     price: "74.97"
   },
+  {
+    id: 69,
+    image: "https://m.media-amazon.com/images/I/71DfwwVbmAL._AC_SX679_PIbundle-3,TopRight,0,0_SH20_.jpg",
+    name: "Ultra Cover Spray",
+    category: ["gadgets"],
+    link: "https://amzn.to/3yxBmRy",
+    price: "17.94"
+  },
 ];
 
 export default data;
