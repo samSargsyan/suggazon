@@ -1,22 +1,20 @@
 {
   "files": {
-    "main.css": "/suggazon/static/css/main.c6a6b2e6.css",
-    "main.js": "/suggazon/static/js/main.d550ce3e.js",
+    "main.css": "/suggazon/static/css/main.8866d9ae.css",
+    "main.js": "/suggazon/static/js/main.d1ae759b.js",
     "static/js/787.214f8415.chunk.js": "/suggazon/static/js/787.214f8415.chunk.js",
     "static/media/logo.svg": "/suggazon/static/media/logo.fe0fa91863e80db2fa3a32cdea336b6c.svg",
     "static/media/exploreIcon.png": "/suggazon/static/media/exploreIcon.dc4e15e977fee4028150.png",
     "static/media/cartDot.png": "/suggazon/static/media/cartDot.4f92a1eab844728d37e8.png",
     "static/media/cart.png": "/suggazon/static/media/cart.72cc138aaa781b61ec87.png",
     "static/media/homeIcon.png": "/suggazon/static/media/homeIcon.b0279e4618f3a17feff2.png",
-    "static/media/left.png": "/suggazon/static/media/left.17915989e65c8b93ee5b.png",
-    "static/media/headphone.png": "/suggazon/static/media/headphone.82d110c15256ab5fbdea.png",
     "index.html": "/suggazon/index.html",
-    "main.c6a6b2e6.css.map": "/suggazon/static/css/main.c6a6b2e6.css.map",
-    "main.d550ce3e.js.map": "/suggazon/static/js/main.d550ce3e.js.map",
+    "main.8866d9ae.css.map": "/suggazon/static/css/main.8866d9ae.css.map",
+    "main.d1ae759b.js.map": "/suggazon/static/js/main.d1ae759b.js.map",
     "787.214f8415.chunk.js.map": "/suggazon/static/js/787.214f8415.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6a6b2e6.css",
-    "static/js/main.d550ce3e.js"
+    "static/css/main.8866d9ae.css",
+    "static/js/main.d1ae759b.js"
   ]
 }
