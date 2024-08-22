@@ -1,45 +1,55 @@
-.header{
-   padding: 1rem 0 1rem 30px;
-   display: flex;
-   justify-content: space-between;
-   height: 100px;
-   align-items: center;
-   padding-right: 140px;
-   .headerTitle{
-      padding-left: 165px;
-   }
-   .headerSearch{
+.header {
+  padding: 1rem 0 1rem 30px;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  padding-right: 140px;
+  .headerTitle {
+    padding-left: 165px;
+  }
+  .headerSearch {
+    display: flex;
+    gap: 1rem;
+    .searchBox {
       display: flex;
-      gap: 1rem;
-      .searchBox{
-         display: flex;
-         justify-content: space-around;
-         align-items: center;
-         width: 250px;
-         height: 40px;
-         border-radius: 10px;
-         background: #FEFEFE;
-         box-shadow: 3px -3px 4px 0px rgba(0, 0, 0, 0.25) inset, 5px -3px 4px 0px rgba(0, 0, 0, 0.25);
-         .searchBoxItems{
-            display: flex;
-            gap: 0.5rem;
-            input{
-               border: none;
-               outline: none;
-            }
-         }
-         img{
-            height: 26px;
-         }
+      justify-content: space-around;
+      align-items: center;
+      width: 250px;
+      height: 40px;
+      border-radius: 10px;
+      background: #fefefe;
+      box-shadow: 3px -3px 4px 0px rgba(0, 0, 0, 0.25) inset,
+        5px -3px 4px 0px rgba(0, 0, 0, 0.25);
+      .searchBoxItems {
+        display: flex;
+        gap: 0.5rem;
+        input {
+          border: none;
+          outline: none;
+        }
       }
-      img{
-         height: 30px;
+      img {
+        height: 26px;
       }
-   }
+    }
+    img {
+      height: 30px;
+    }
+  }
 }
 
 @media screen and (max-width: 780px) {
-   .headerTitle {
-     font-size: 10px;
-   }
- }
+  .header {
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    flex-direction: column;
+    .headerTitle {
+      font-size: 10px;
+      padding-left: 0;
+    }
+  }
+}

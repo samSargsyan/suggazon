@@ -1,66 +1,25 @@
 .App {
   display: flex;
   height: 100vh;
+  transition: width 0.3s ease; /* Smooth transition for sidebar */
 }
-.layout{
-  width: calc(100% - 200px);
+
+.layout {
+  flex: 1;
+  transition: margin-left 0.3s ease;
 }
-a{
+
+/* Link styles */
+a {
   text-decoration: none;
   color: black;
 }
 
+/* Mobile styles */
 @media screen and (max-width: 780px) {
-  .mobileOpenMenu{
-    animation-name: mobileOpenMenu;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
+  .App {
+    flex-direction: column;
   }
-  .mobileCloseMenu{
-      animation-name: mobileCloseMenu;
-      animation-fill-mode: forwards;
-      animation-duration: 1s;
-  }
-  @keyframes mobileCloseMenu {
-    from {
-      width: calc(100% - 200px);
-    }
-    to {
-      width: 98%;
-    }  
-  }
-  @keyframes mobileOpenMenu {
-    from {
-      width: 98%;
-    }
-    to {
-      width: calc(100% - 200px);
-    }
-  }
-  .AppOpen{
-    animation-name: mobileOpenApp;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
-  }
-  .AppClose{
-      animation-name: mobileCloseApp;
-      animation-fill-mode: forwards;
-      animation-duration: 1s;
-  }
-  @keyframes mobileCloseApp {
-    from {
-      width: 200%;
-    }
-    to {
-      width: 100%;
-    }  
-  }
-  @keyframes mobileOpenApp {
-    from {
-      width: 100%;
-    }
-    to {
-      width: 200%;
-    }
-  }
+  
+  
 }

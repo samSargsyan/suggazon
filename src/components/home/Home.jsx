@@ -1,5 +1,4 @@
 import "./home.scss";
-import headphone from "../../images/headphone.png";
 import Item from "../item/Item";
 import BestSeller from "../bestSeller/BestSeller";
 import data from "../data";
@@ -12,6 +11,7 @@ import { Autoplay, Mousewheel, Pagination } from "swiper/modules";
 import slider from "../slider.js";
 import "swiper/css/pagination";
 import { Link } from "react-router-dom";
+import { isMobile } from "react-device-detect";
 
 const Home = ({ searchValue }) => {
   const categories = [
@@ -55,10 +55,12 @@ const Home = ({ searchValue }) => {
             slidesPerView={1}
             spaceBetween={30}
             mousewheel={true}
-            autoplay={{
+            /*
+              autoplay={{
               delay: 2500,
               disableOnInteraction: false,
             }}
+              */
             navigation={true}
             pagination={{
               clickable: true,
@@ -77,7 +79,6 @@ const Home = ({ searchValue }) => {
                     ></div>
                     <div className="sellBoxText">
                       <strong>{item.name}</strong>
-                      <span>A clown wig you can wear to any silly event!</span>
                       <div className="buttonBox">
                         <a href={item.link} target="_blank" rel="noreferrer">
                           <button>Buy Now!</button>
@@ -119,14 +120,23 @@ const Home = ({ searchValue }) => {
       </div>
       <div className="itemsAndBestSeller">
         <div className="items">
-          {categorizedItems.map((category, categoryIndex) => (
-            <div className="exploreSection" key={categoryIndex}>
-              <span>{categories[categoryIndex]}</span>
-              {category.map((item, index) => (
-                <Item item={item} key={index} />
-              ))}
-            </div>
-          ))}
+          {isMobile ? (
+            categorizedItems.map((category, categoryIndex) => (
+              <div className="exploreSection" key={categoryIndex}>
+                <span>{categories[categoryIndex]}</span>
+                  <Item item={category[0]} />
+              </div>
+            ))
+          ) : (
+            categorizedItems.map((category, categoryIndex) => (
+              <div className="exploreSection" key={categoryIndex}>
+                <span>{categories[categoryIndex]}</span>
+                {category.map((item, index) => (
+                  <Item item={item} key={index} />
+                ))}
+              </div>
+            ))
+          )}
           <div className="exploreSection">
             <Link to="/explore">
               <span>See All</span>
